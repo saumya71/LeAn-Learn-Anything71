@@ -18,21 +18,26 @@
   <main>
     <div class="detail-container">
       <!-- Video Player -->
-      <div class="video-player-container">
-        <iframe id="video-player" class="video-player" src="" allowfullscreen allow="autoplay; encrypted-media"></iframe>
+      <div id="video-container" class="video-player-container">
+        <!-- Replaced by YT API -->
+        <div id="video-player-placeholder"></div>
       </div>
 
       <!-- Course Info -->
       <div class="course-info">
         <div class="course-header">
-          <div>
+          <div class="course-header-top">
             <span id="course-source" class="card-source">Source</span>
             <h1 id="course-title" class="card-title" style="font-size: 1.8rem;">Loading...</h1>
             <div id="course-meta" class="card-meta">Category • Level • Duration</div>
           </div>
-          <button id="detail-save-btn" class="btn-primary" style="background:none; border: 1px solid var(--primary-color); color: var(--primary-color);">
-            ☆ Save to Library
-          </button>
+
+          <div class="course-actions-bar">
+             <a id="official-site-btn" href="#" target="_blank" class="btn-secondary">Visit Official Website</a>
+             <button id="detail-save-btn" class="btn-primary" style="background:none; border: 1px solid var(--primary-color); color: var(--primary-color);">
+               ☆ Save to Library
+             </button>
+          </div>
         </div>
         <p id="course-desc" class="course-description">
           <!-- Full description here -->

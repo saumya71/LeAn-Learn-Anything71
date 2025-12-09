@@ -10,6 +10,8 @@
   --header-bg: #ffffff;
   --header-border: #e5e7eb;
   --button-text: #ffffff;
+  --error-bg: #fee2e2;
+  --error-text: #991b1b;
 }
 
 body.theme-dark {
@@ -23,6 +25,8 @@ body.theme-dark {
   --secondary-text: #9ca3af;
   --header-bg: #1f2937;
   --header-border: #374151;
+  --error-bg: #7f1d1d;
+  --error-text: #fecaca;
 }
 
 * {
@@ -222,12 +226,41 @@ select.category-filter {
   background-color: #000;
   border-radius: 8px;
   overflow: hidden;
+  position: relative; /* For absolute positioning of error overlay */
 }
 
-iframe.video-player {
+/* Placeholder element for the YT API to replace */
+#video-player-placeholder {
   width: 100%;
   height: 100%;
-  border: none;
+}
+
+/* Error Overlay */
+.video-error-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--card-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+  z-index: 10;
+}
+
+.video-error-msg {
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.video-error-links {
+  display: flex;
+  gap: 1rem;
 }
 
 .course-info {
@@ -239,9 +272,22 @@ iframe.video-player {
 
 .course-header {
   display: flex;
-  justify-content: space-between;
-  align-items: start;
+  flex-direction: column; /* Stack on mobile */
+  gap: 1rem;
   margin-bottom: 1rem;
+}
+
+.course-header-top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: start;
+}
+
+.course-actions-bar {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
 .course-description {
@@ -288,6 +334,22 @@ iframe.video-player {
   font-size: 0.9rem;
 }
 
+.btn-secondary {
+  background: none;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background 0.2s;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background-color: rgba(37, 99, 235, 0.1);
+}
+
 /* Utility */
 .hidden {
   display: none !important;
@@ -314,5 +376,21 @@ iframe.video-player {
     grid-row: 2 / 4;
     max-height: 600px;
     overflow-y: auto;
+  }
+
+  .course-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .course-header-top {
+    width: auto;
+    flex: 1;
+    display: block;
+  }
+
+  .course-actions-bar {
+    margin-top: 0;
+    align-items: flex-start;
   }
 }

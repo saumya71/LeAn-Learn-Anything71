@@ -2,6 +2,7 @@
 let allCourses = [];
 let savedCourseIds = JSON.parse(localStorage.getItem('lean_saved_courses')) || [];
 let currentTheme = localStorage.getItem('lean_theme') || 'light';
+let player; // YT Player instance
 
 // Constants
 const DATA_URL = 'courses.json';
@@ -24,8 +25,6 @@ async function init() {
     allCourses = await response.json();
   } catch (error) {
     console.error('Error loading data:', error);
-    // Fallback if fetch fails (e.g. file:// protocol restriction in some browsers)
-    // In a real scenario, we'd show an error message.
     const grid = document.getElementById('course-grid');
     if(grid) grid.innerHTML = `<p style="text-align:center; padding: 2rem;">Error loading courses. If you are opening this file directly, please use a local server or browser that allows local file fetch.<br>Details: ${error.message}</p>`;
     return;
@@ -74,7 +73,6 @@ function initHomePage() {
   const searchInput = document.getElementById('search-input');
   const categorySelect = document.getElementById('category-select');
   const libBtn = document.getElementById('library-btn');
-  const homeBtn = document.getElementById('home-btn'); // optional if we implement tabs
   const pageTitle = document.getElementById('page-title');
 
   // Check if we want to show Library view
@@ -182,6 +180,9 @@ function initDetailPage() {
     return;
   }
 
+  // Load YT API
+  loadYoutubeAPI();
+
   renderDetailView(course);
 }
 
@@ -195,6 +196,15 @@ function renderDetailView(course) {
   document.getElementById('course-source').innerText = course.source_name;
   document.getElementById('course-desc').innerText = course.full_description;
   document.getElementById('course-meta').innerText = `${course.category} • ${course.level} • ${course.duration_text}`;
+
+  // Official URL Btn
+  const officialBtn = document.getElementById('official-site-btn');
+  if (course.official_url) {
+    officialBtn.href = course.official_url;
+    officialBtn.classList.remove('hidden');
+  } else {
+    officialBtn.classList.add('hidden');
+  }
 
   // Save Button State
   const saveBtn = document.getElementById('detail-save-btn');
@@ -214,17 +224,25 @@ function renderDetailView(course) {
   course.lectures.forEach((lecture, index) => {
     const li = document.createElement('li');
     li.className = 'lecture-item';
+    li.dataset.videoId = lecture.video_id; // Store ID for easy access
     li.innerHTML = `
       <span class="lecture-title">${index + 1}. ${lecture.title}</span>
       <span class="lecture-duration">${lecture.duration_text || ''}</span>
     `;
 
-    li.onclick = () => playLecture(lecture.video_id, li);
+    li.onclick = () => playLecture(lecture.video_id, li, course);
     lectureList.appendChild(li);
 
     // Auto-load first lecture
     if (index === 0) {
-      playLecture(lecture.video_id, li);
+      // If API not ready, wait for it
+      if (window.YT && window.YT.Player) {
+        playLecture(lecture.video_id, li, course);
+      } else {
+        window.onYouTubeIframeAPIReady = () => {
+          playLecture(lecture.video_id, li, course);
+        };
+      }
     }
   });
 }
@@ -235,18 +253,88 @@ function updateDetailSaveBtn(btn, isSaved) {
 }
 
 /**
- * Play Lecture
+ * Load YouTube IFrame API
+ */
+function loadYoutubeAPI() {
+  if (!window.YT) {
+    const tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    const firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  }
+}
+
+/**
+ * Play Lecture using YouTube API
  * @param {string} videoId
  * @param {HTMLElement} listItem
+ * @param {Object} course
  */
-function playLecture(videoId, listItem) {
-  const iframe = document.getElementById('video-player');
-  // Use embed URL
-  iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+function playLecture(videoId, listItem, course) {
+  // Clear any existing error overlays
+  const container = document.getElementById('video-container');
+  const existingOverlay = container.querySelector('.video-error-overlay');
+  if (existingOverlay) existingOverlay.remove();
 
-  // Update UI active state
+  // Highlight List Item
   document.querySelectorAll('.lecture-item').forEach(item => item.classList.remove('active'));
   if (listItem) listItem.classList.add('active');
+
+  // Initialize or Load Video
+  if (player && typeof player.loadVideoById === 'function') {
+    player.loadVideoById(videoId);
+  } else {
+    player = new YT.Player('video-player-placeholder', {
+      height: '100%',
+      width: '100%',
+      videoId: videoId,
+      playerVars: {
+        'autoplay': 1,
+        'playsinline': 1
+      },
+      events: {
+        'onError': (event) => onPlayerError(event, videoId, course)
+      }
+    });
+  }
+}
+
+/**
+ * Handle YouTube Player Error
+ * @param {Object} event
+ * @param {string} videoId
+ * @param {Object} course
+ */
+function onPlayerError(event, videoId, course) {
+  console.warn("YouTube Player Error:", event.data);
+  // Error codes: 2 (invalid param), 5 (HTML5 error), 100 (not found), 101/150 (embed not allowed)
+
+  const container = document.getElementById('video-container');
+  // Clear existing player iframe to show overlay nicely if needed, or overlay on top
+
+  // Create Overlay
+  const overlay = document.createElement('div');
+  overlay.className = 'video-error-overlay';
+  overlay.innerHTML = `
+    <div class="video-error-msg">
+      ⚠️ Video unavailable here
+      <div style="font-size: 0.9rem; margin-top:0.5rem; opacity: 0.8;">
+        (Code: ${event.data})
+      </div>
+    </div>
+    <div class="video-error-links">
+      <a href="https://www.youtube.com/watch?v=${videoId}" target="_blank" class="btn-primary">
+        Watch on YouTube
+      </a>
+      ${course.official_url ? `<a href="${course.official_url}" target="_blank" class="btn-secondary">Visit Course Site</a>` : ''}
+    </div>
+  `;
+
+  // Append or replace
+  const existingOverlay = container.querySelector('.video-error-overlay');
+  if (existingOverlay) existingOverlay.remove();
+
+  container.appendChild(overlay);
 }
 
 /**
@@ -275,6 +363,7 @@ function toggleSave(courseId) {
 // Global scope required for onclick handlers in HTML
 window.toggleSave = toggleSave;
 window.init = init;
+// window.onYouTubeIframeAPIReady is handled dynamically
 
 // Run init on load
 document.addEventListener('DOMContentLoaded', init);
