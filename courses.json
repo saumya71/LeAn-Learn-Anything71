@@ -1,0 +1,178 @@
+[
+  {
+    "id": "cs50x",
+    "title": "CS50's Introduction to Computer Science",
+    "short_description": "An introduction to the intellectual enterprises of computer science and the art of programming.",
+    "full_description": "Harvard University's CS50x is an introduction to the intellectual enterprises of computer science and the art of programming for majors and non-majors alike, with or without prior programming experience. Topics include abstraction, algorithms, data structures, encapsulation, resource management, security, software engineering, and web development.",
+    "category": "Programming",
+    "level": "Beginner",
+    "source_name": "Harvard University",
+    "platform": "YouTube",
+    "is_free": true,
+    "language": "English",
+    "duration_text": "12 weeks",
+    "thumbnail_url": "https://img.youtube.com/vi/8mAITcNt710/maxresdefault.jpg",
+    "lectures": [
+      {
+        "id": "cs50_l0",
+        "title": "Lecture 0 - Scratch",
+        "order_index": 0,
+        "video_platform": "YouTube",
+        "video_id": "8mAITcNt710",
+        "duration_text": "1:45:00"
+      },
+      {
+        "id": "cs50_l1",
+        "title": "Lecture 1 - C",
+        "order_index": 1,
+        "video_platform": "YouTube",
+        "video_id": "zYMlhtNC5So",
+        "duration_text": "2:15:00"
+      }
+    ]
+  },
+  {
+    "id": "mit_60001",
+    "title": "MIT 6.0001: Intro to CS and Programming in Python",
+    "short_description": "Introduction to Computer Science and Programming in Python is intended for students with little or no programming experience.",
+    "full_description": "This course is the first of a two-course sequence: Introduction to Computer Science and Programming in Python, and Introduction to Computational Thinking and Data Science. It introduces students to concepts in computer science and programming.",
+    "category": "Programming",
+    "level": "Beginner",
+    "source_name": "MIT OpenCourseWare",
+    "platform": "YouTube",
+    "is_free": true,
+    "language": "English",
+    "duration_text": "15 lectures",
+    "thumbnail_url": "https://img.youtube.com/vi/ytPnH8r6I58/maxresdefault.jpg",
+    "lectures": [
+      {
+        "id": "mit_l1",
+        "title": "Lecture 1: What is Computation?",
+        "order_index": 0,
+        "video_platform": "YouTube",
+        "video_id": "ytPnH8r6I58",
+        "duration_text": "42:00"
+      },
+      {
+        "id": "mit_l2",
+        "title": "Lecture 2: Branching and Iteration",
+        "order_index": 1,
+        "video_platform": "YouTube",
+        "video_id": "5u0h0W8s3N0",
+        "duration_text": "48:00"
+      }
+    ]
+  },
+  {
+    "id": "fcc_html",
+    "title": "HTML & CSS Full Course - Beginner to Pro",
+    "short_description": "Learn HTML5 and CSS3 from scratch - full course.",
+    "full_description": "In this full course, you will learn how to build websites with HTML and CSS. You will learn semantic HTML, CSS box model, Flexbox, Grid, and more.",
+    "category": "Web Development",
+    "level": "Beginner",
+    "source_name": "freeCodeCamp",
+    "platform": "YouTube",
+    "is_free": true,
+    "language": "English",
+    "duration_text": "11 hours",
+    "thumbnail_url": "https://img.youtube.com/vi/mU6anWqZJcc/maxresdefault.jpg",
+    "lectures": [
+      {
+        "id": "fcc_html_full",
+        "title": "Full Course Video",
+        "order_index": 0,
+        "video_platform": "YouTube",
+        "video_id": "mU6anWqZJcc",
+        "duration_text": "11:30:00"
+      }
+    ]
+  },
+  {
+    "id": "fcc_python",
+    "title": "Python for Beginners - Full Course",
+    "short_description": "Learn Python programming language from scratch.",
+    "full_description": "This course will give you a full introduction into all of the core concepts in python. Follow along with the videos and you'll be a python programmer in no time!",
+    "category": "Programming",
+    "level": "Beginner",
+    "source_name": "freeCodeCamp",
+    "platform": "YouTube",
+    "is_free": true,
+    "language": "English",
+    "duration_text": "4 hours",
+    "thumbnail_url": "https://img.youtube.com/vi/rfscVS0vtbw/maxresdefault.jpg",
+    "lectures": [
+      {
+        "id": "fcc_py_full",
+        "title": "Full Course Video",
+        "order_index": 0,
+        "video_platform": "YouTube",
+        "video_id": "rfscVS0vtbw",
+        "duration_text": "4:26:00"
+      }
+    ]
+  },
+  {
+    "id": "google_data",
+    "title": "Google Data Analytics Professional Certificate",
+    "short_description": "Gain the skills you need to become a Junior Data Analyst.",
+    "full_description": "This is the first video of the Google Data Analytics Professional Certificate. It introduces data analysis and the role of a data analyst.",
+    "category": "Data Science",
+    "level": "Beginner",
+    "source_name": "Google",
+    "platform": "YouTube",
+    "is_free": true,
+    "language": "English",
+    "duration_text": "Preview",
+    "thumbnail_url": "https://img.youtube.com/vi/X18Hn2guxnU/maxresdefault.jpg",
+    "lectures": [
+      {
+        "id": "google_da_1",
+        "title": "What is Data Analytics?",
+        "order_index": 0,
+        "video_platform": "YouTube",
+        "video_id": "X18Hn2guxnU",
+        "duration_text": "10:00"
+      },
+      {
+        "id": "google_da_2",
+        "title": "Data Ecosystem",
+        "order_index": 1,
+        "video_platform": "YouTube",
+        "video_id": "L3Mv3i9a3u4",
+        "duration_text": "5:00"
+      }
+    ]
+  },
+  {
+    "id": "stanford_ml",
+    "title": "Stanford CS229: Machine Learning",
+    "short_description": "The course provides a broad introduction to machine learning, datamining, and statistical pattern recognition.",
+    "full_description": "This is the original Machine Learning course by Andrew Ng at Stanford. It covers supervised learning, unsupervised learning, and best practices in machine learning.",
+    "category": "AI/ML",
+    "level": "Advanced",
+    "source_name": "Stanford University",
+    "platform": "YouTube",
+    "is_free": true,
+    "language": "English",
+    "duration_text": "20 lectures",
+    "thumbnail_url": "https://img.youtube.com/vi/jGwO_UgTS7I/maxresdefault.jpg",
+    "lectures": [
+      {
+        "id": "stanford_ml_1",
+        "title": "Lecture 1 - Introduction",
+        "order_index": 0,
+        "video_platform": "YouTube",
+        "video_id": "jGwO_UgTS7I",
+        "duration_text": "1:14:00"
+      },
+      {
+        "id": "stanford_ml_2",
+        "title": "Lecture 2 - Linear Regression",
+        "order_index": 1,
+        "video_platform": "YouTube",
+        "video_id": "5u4G23_OohI",
+        "duration_text": "1:15:00"
+      }
+    ]
+  }
+]
