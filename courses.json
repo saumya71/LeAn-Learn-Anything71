@@ -180,5 +180,212 @@
         "duration_text": "1:15:00"
       }
     ]
+  },
+  {
+    "id": "yale_physics",
+    "title": "Fundamentals of Physics I",
+    "short_description": "A comprehensive introduction to the fundamental principles of physics.",
+    "full_description": "Professor Ramamurti Shankar introduces students to the basic principles of physics, starting with mechanics, relativity, and thermodynamics.",
+    "category": "Physics",
+    "level": "Beginner",
+    "source_name": "Yale University",
+    "official_url": "https://oyc.yale.edu/physics/phys-200",
+    "platform": "YouTube",
+    "is_free": true,
+    "language": "English",
+    "duration_text": "24 lectures",
+    "thumbnail_url": "https://img.youtube.com/vi/jN-FfJKkCOo/maxresdefault.jpg",
+    "lectures": [
+      {
+        "id": "yale_phys_1",
+        "title": "1. Course Introduction and Newtonian Mechanics",
+        "order_index": 0,
+        "video_platform": "YouTube",
+        "video_id": "jN-FfJKkCOo",
+        "duration_text": "1:13:00"
+      },
+      {
+        "id": "yale_phys_2",
+        "title": "2. Vectors in Multiple Dimensions",
+        "order_index": 1,
+        "video_platform": "YouTube",
+        "video_id": "M7X9_6D6v9M",
+        "duration_text": "1:08:00"
+      }
+    ]
+  },
+  {
+    "id": "yc_startup",
+    "title": "How to Start a Startup",
+    "short_description": "Everything you need to know about starting a startup, for free, from some of the world experts.",
+    "full_description": "Sam Altman and others from Y Combinator cover how to come up with ideas, how to find a co-founder, how to build a product, how to get users, and how to raise money.",
+    "category": "Business",
+    "level": "Beginner",
+    "source_name": "Y Combinator",
+    "official_url": "https://startupclass.samaltman.com/",
+    "platform": "YouTube",
+    "is_free": true,
+    "language": "English",
+    "duration_text": "20 lectures",
+    "thumbnail_url": "https://img.youtube.com/vi/CBYhVcO4Wds/maxresdefault.jpg",
+    "lectures": [
+      {
+        "id": "yc_startup_1",
+        "title": "Lecture 1: How to Start a Startup",
+        "order_index": 0,
+        "video_platform": "YouTube",
+        "video_id": "CBYhVcO4Wds",
+        "duration_text": "48:00"
+      },
+      {
+        "id": "yc_startup_2",
+        "title": "Lecture 2: Team and Execution",
+        "order_index": 1,
+        "video_platform": "YouTube",
+        "video_id": "CVfnkM44Urs",
+        "duration_text": "49:00"
+      }
+    ]
+  },
+  {
+    "id": "crashcourse_world_history",
+    "title": "World History",
+    "short_description": "A fun and fast-paced look at the history of the world.",
+    "full_description": "John Green teaches you the history of the world in 42 episodes! From the Agricultural Revolution to the modern day.",
+    "category": "History",
+    "level": "Beginner",
+    "source_name": "CrashCourse",
+    "official_url": "https://thecrashcourse.com/topic/worldhistory/",
+    "platform": "YouTube",
+    "is_free": true,
+    "language": "English",
+    "duration_text": "42 episodes",
+    "thumbnail_url": "https://img.youtube.com/vi/Yocja_N5s1I/maxresdefault.jpg",
+    "lectures": [
+      {
+        "id": "cc_wh_1",
+        "title": "The Agricultural Revolution",
+        "order_index": 0,
+        "video_platform": "YouTube",
+        "video_id": "Yocja_N5s1I",
+        "duration_text": "11:00"
+      },
+      {
+        "id": "cc_wh_2",
+        "title": "Indus Valley Civilization",
+        "order_index": 1,
+        "video_platform": "YouTube",
+        "video_id": "n7ndRwqJYDM",
+        "duration_text": "9:30"
+      }
+    ]
+  },
+  {
+    "id": "leonard_calc1",
+    "title": "Calculus 1",
+    "short_description": "A complete and detailed Calculus 1 course.",
+    "full_description": "Professor Leonard breaks down Calculus 1 concepts in an easy-to-understand way. Covers limits, derivatives, applications of derivatives, and integrals.",
+    "category": "Mathematics",
+    "level": "Beginner",
+    "source_name": "Professor Leonard",
+    "official_url": "https://www.youtube.com/playlist?list=PLF797E961509B4EB5",
+    "platform": "YouTube",
+    "is_free": true,
+    "language": "English",
+    "duration_text": "Full Semester",
+    "thumbnail_url": "https://img.youtube.com/vi/fYyARMqiaag/maxresdefault.jpg",
+    "lectures": [
+      {
+        "id": "calc1_intro",
+        "title": "Introduction to Limits",
+        "order_index": 0,
+        "video_platform": "YouTube",
+        "video_id": "fYyARMqiaag",
+        "duration_text": "2:30:00"
+      }
+    ]
+  },
+  {
+    "id": "envato_graphic_design",
+    "title": "Graphic Design for Beginners",
+    "short_description": "Learn the principles of graphic design.",
+    "full_description": "This course covers the main principles of graphic design including contrast, hierarchy, alignment, balance, and more.",
+    "category": "Design",
+    "level": "Beginner",
+    "source_name": "Envato Tuts+",
+    "official_url": "https://design.tutsplus.com/",
+    "platform": "YouTube",
+    "is_free": true,
+    "language": "English",
+    "duration_text": "20 mins",
+    "thumbnail_url": "https://img.youtube.com/vi/YqQx75OPRa0/maxresdefault.jpg",
+    "lectures": [
+      {
+        "id": "design_1",
+        "title": "Graphic Design Principles",
+        "order_index": 0,
+        "video_platform": "YouTube",
+        "video_id": "YqQx75OPRa0",
+        "duration_text": "16:00"
+      }
+    ]
+  },
+  {
+    "id": "yale_psych",
+    "title": "Introduction to Psychology",
+    "short_description": "A comprehensive introduction to the study of the human mind.",
+    "full_description": "Professor Paul Bloom explores the scientific study of thought and behavior. Topics include the brain, development, language, perception, and memory.",
+    "category": "Psychology",
+    "level": "Beginner",
+    "source_name": "Yale University",
+    "official_url": "https://oyc.yale.edu/psychology/psyc-110",
+    "platform": "YouTube",
+    "is_free": true,
+    "language": "English",
+    "duration_text": "20 lectures",
+    "thumbnail_url": "https://img.youtube.com/vi/P3FKHsqKXgY/maxresdefault.jpg",
+    "lectures": [
+      {
+        "id": "psych_1",
+        "title": "1. Introduction",
+        "order_index": 0,
+        "video_platform": "YouTube",
+        "video_id": "P3FKHsqKXgY",
+        "duration_text": "48:00"
+      },
+      {
+        "id": "psych_2",
+        "title": "2. Foundations: This Is Your Brain",
+        "order_index": 1,
+        "video_platform": "YouTube",
+        "video_id": "NiLbdN_dcnI",
+        "duration_text": "55:00"
+      }
+    ]
+  },
+  {
+    "id": "shiller_finance",
+    "title": "Financial Markets",
+    "short_description": "An overview of the ideas, methods, and institutions that permit human society to manage risks and foster enterprise.",
+    "full_description": "Professor Robert Shiller provides a description of the practices and institutions of modern finance. Topics include risk management, behavioral finance, and securities.",
+    "category": "Finance",
+    "level": "Intermediate",
+    "source_name": "Yale University",
+    "official_url": "https://oyc.yale.edu/economics/econ-252",
+    "platform": "YouTube",
+    "is_free": true,
+    "language": "English",
+    "duration_text": "23 lectures",
+    "thumbnail_url": "https://img.youtube.com/vi/WEDIj9JBTC8/maxresdefault.jpg",
+    "lectures": [
+      {
+        "id": "fin_1",
+        "title": "1. Finance and Insurance as Powerful Forces",
+        "order_index": 0,
+        "video_platform": "YouTube",
+        "video_id": "WEDIj9JBTC8",
+        "duration_text": "1:08:00"
+      }
+    ]
   }
 ]

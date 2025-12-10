@@ -75,6 +75,11 @@ function initHomePage() {
   const libBtn = document.getElementById('library-btn');
   const pageTitle = document.getElementById('page-title');
 
+  // Populate categories dynamically
+  if (categorySelect) {
+    populateCategories(allCourses, categorySelect);
+  }
+
   // Check if we want to show Library view
   const urlParams = new URLSearchParams(window.location.search);
   const showLibrary = urlParams.get('view') === 'library';
@@ -120,6 +125,27 @@ function initHomePage() {
 }
 
 /**
+ * Populate Categories
+ * @param {Array} courses
+ * @param {HTMLElement} selectElement
+ */
+function populateCategories(courses, selectElement) {
+  const categories = new Set(courses.map(c => c.category));
+  const sortedCategories = Array.from(categories).sort();
+
+  // Clear existing options except first
+  // Actually simpler to just clear and re-add "All"
+  selectElement.innerHTML = '<option value="All">All Categories</option>';
+
+  sortedCategories.forEach(cat => {
+    const option = document.createElement('option');
+    option.value = cat;
+    option.innerText = cat;
+    selectElement.appendChild(option);
+  });
+}
+
+/**
  * Render Course Grid
  * @param {Array} courses List of courses to render
  * @param {Boolean} onlySaved If true, filter by saved IDs
@@ -152,8 +178,8 @@ function renderCourses(courses, onlySaved = false) {
         <span class="card-source">${course.source_name}</span>
         <h3 class="card-title">${course.title}</h3>
         <div class="card-meta">
-          <span>${course.level}</span> •
-          <span>${course.language}</span>
+          <span>${course.category}</span> •
+          <span>${course.level}</span>
         </div>
         <div class="card-actions">
           <a href="course.html?id=${course.id}" class="btn-primary">View Details</a>
