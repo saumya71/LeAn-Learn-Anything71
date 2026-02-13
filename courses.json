@@ -1,0 +1,391 @@
+[
+  {
+    "id": "cs50x",
+    "title": "CS50's Introduction to Computer Science",
+    "short_description": "An introduction to the intellectual enterprises of computer science and the art of programming.",
+    "full_description": "Harvard University's CS50x is an introduction to the intellectual enterprises of computer science and the art of programming for majors and non-majors alike, with or without prior programming experience. Topics include abstraction, algorithms, data structures, encapsulation, resource management, security, software engineering, and web development.",
+    "category": "Programming",
+    "level": "Beginner",
+    "source_name": "Harvard University",
+    "official_url": "https://cs50.harvard.edu/x/",
+    "platform": "YouTube",
+    "is_free": true,
+    "language": "English",
+    "duration_text": "12 weeks",
+    "thumbnail_url": "https://img.youtube.com/vi/8mAITcNt710/maxresdefault.jpg",
+    "lectures": [
+      {
+        "id": "cs50_l0",
+        "title": "Lecture 0 - Scratch",
+        "order_index": 0,
+        "video_platform": "YouTube",
+        "video_id": "8mAITcNt710",
+        "duration_text": "1:45:00"
+      },
+      {
+        "id": "cs50_l1",
+        "title": "Lecture 1 - C",
+        "order_index": 1,
+        "video_platform": "YouTube",
+        "video_id": "zYMlhtNC5So",
+        "duration_text": "2:15:00"
+      }
+    ]
+  },
+  {
+    "id": "mit_60001",
+    "title": "MIT 6.0001: Intro to CS and Programming in Python",
+    "short_description": "Introduction to Computer Science and Programming in Python is intended for students with little or no programming experience.",
+    "full_description": "This course is the first of a two-course sequence: Introduction to Computer Science and Programming in Python, and Introduction to Computational Thinking and Data Science. It introduces students to concepts in computer science and programming.",
+    "category": "Programming",
+    "level": "Beginner",
+    "source_name": "MIT OpenCourseWare",
+    "official_url": "https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/",
+    "platform": "YouTube",
+    "is_free": true,
+    "language": "English",
+    "duration_text": "15 lectures",
+    "thumbnail_url": "https://img.youtube.com/vi/ytPnH8r6I58/maxresdefault.jpg",
+    "lectures": [
+      {
+        "id": "mit_l1",
+        "title": "Lecture 1: What is Computation?",
+        "order_index": 0,
+        "video_platform": "YouTube",
+        "video_id": "ytPnH8r6I58",
+        "duration_text": "42:00"
+      },
+      {
+        "id": "mit_l2",
+        "title": "Lecture 2: Branching and Iteration",
+        "order_index": 1,
+        "video_platform": "YouTube",
+        "video_id": "5u0h0W8s3N0",
+        "duration_text": "48:00"
+      }
+    ]
+  },
+  {
+    "id": "fcc_html",
+    "title": "HTML & CSS Full Course - Beginner to Pro",
+    "short_description": "Learn HTML5 and CSS3 from scratch - full course.",
+    "full_description": "In this full course, you will learn how to build websites with HTML and CSS. You will learn semantic HTML, CSS box model, Flexbox, Grid, and more.",
+    "category": "Web Development",
+    "level": "Beginner",
+    "source_name": "freeCodeCamp",
+    "official_url": "https://www.freecodecamp.org/",
+    "platform": "YouTube",
+    "is_free": true,
+    "language": "English",
+    "duration_text": "11 hours",
+    "thumbnail_url": "https://img.youtube.com/vi/mU6anWqZJcc/maxresdefault.jpg",
+    "lectures": [
+      {
+        "id": "fcc_html_full",
+        "title": "Full Course Video",
+        "order_index": 0,
+        "video_platform": "YouTube",
+        "video_id": "mU6anWqZJcc",
+        "duration_text": "11:30:00"
+      }
+    ]
+  },
+  {
+    "id": "fcc_python",
+    "title": "Python for Beginners - Full Course",
+    "short_description": "Learn Python programming language from scratch.",
+    "full_description": "This course will give you a full introduction into all of the core concepts in python. Follow along with the videos and you'll be a python programmer in no time!",
+    "category": "Programming",
+    "level": "Beginner",
+    "source_name": "freeCodeCamp",
+    "official_url": "https://www.freecodecamp.org/",
+    "platform": "YouTube",
+    "is_free": true,
+    "language": "English",
+    "duration_text": "4 hours",
+    "thumbnail_url": "https://img.youtube.com/vi/rfscVS0vtbw/maxresdefault.jpg",
+    "lectures": [
+      {
+        "id": "fcc_py_full",
+        "title": "Full Course Video",
+        "order_index": 0,
+        "video_platform": "YouTube",
+        "video_id": "rfscVS0vtbw",
+        "duration_text": "4:26:00"
+      }
+    ]
+  },
+  {
+    "id": "google_data",
+    "title": "Google Data Analytics Professional Certificate",
+    "short_description": "Gain the skills you need to become a Junior Data Analyst.",
+    "full_description": "This is the first video of the Google Data Analytics Professional Certificate. It introduces data analysis and the role of a data analyst.",
+    "category": "Data Science",
+    "level": "Beginner",
+    "source_name": "Google",
+    "official_url": "https://www.coursera.org/professional-certificates/google-data-analytics",
+    "platform": "YouTube",
+    "is_free": true,
+    "language": "English",
+    "duration_text": "Preview",
+    "thumbnail_url": "https://img.youtube.com/vi/X18Hn2guxnU/maxresdefault.jpg",
+    "lectures": [
+      {
+        "id": "google_da_1",
+        "title": "What is Data Analytics?",
+        "order_index": 0,
+        "video_platform": "YouTube",
+        "video_id": "X18Hn2guxnU",
+        "duration_text": "10:00"
+      },
+      {
+        "id": "google_da_2",
+        "title": "Data Ecosystem",
+        "order_index": 1,
+        "video_platform": "YouTube",
+        "video_id": "L3Mv3i9a3u4",
+        "duration_text": "5:00"
+      }
+    ]
+  },
+  {
+    "id": "stanford_ml",
+    "title": "Stanford CS229: Machine Learning",
+    "short_description": "The course provides a broad introduction to machine learning, datamining, and statistical pattern recognition.",
+    "full_description": "This is the original Machine Learning course by Andrew Ng at Stanford. It covers supervised learning, unsupervised learning, and best practices in machine learning.",
+    "category": "AI/ML",
+    "level": "Advanced",
+    "source_name": "Stanford University",
+    "official_url": "https://online.stanford.edu/courses/cs229-machine-learning",
+    "platform": "YouTube",
+    "is_free": true,
+    "language": "English",
+    "duration_text": "20 lectures",
+    "thumbnail_url": "https://img.youtube.com/vi/jGwO_UgTS7I/maxresdefault.jpg",
+    "lectures": [
+      {
+        "id": "stanford_ml_1",
+        "title": "Lecture 1 - Introduction",
+        "order_index": 0,
+        "video_platform": "YouTube",
+        "video_id": "jGwO_UgTS7I",
+        "duration_text": "1:14:00"
+      },
+      {
+        "id": "stanford_ml_2",
+        "title": "Lecture 2 - Linear Regression",
+        "order_index": 1,
+        "video_platform": "YouTube",
+        "video_id": "5u4G23_OohI",
+        "duration_text": "1:15:00"
+      }
+    ]
+  },
+  {
+    "id": "yale_physics",
+    "title": "Fundamentals of Physics I",
+    "short_description": "A comprehensive introduction to the fundamental principles of physics.",
+    "full_description": "Professor Ramamurti Shankar introduces students to the basic principles of physics, starting with mechanics, relativity, and thermodynamics.",
+    "category": "Physics",
+    "level": "Beginner",
+    "source_name": "Yale University",
+    "official_url": "https://oyc.yale.edu/physics/phys-200",
+    "platform": "YouTube",
+    "is_free": true,
+    "language": "English",
+    "duration_text": "24 lectures",
+    "thumbnail_url": "https://img.youtube.com/vi/jN-FfJKkCOo/maxresdefault.jpg",
+    "lectures": [
+      {
+        "id": "yale_phys_1",
+        "title": "1. Course Introduction and Newtonian Mechanics",
+        "order_index": 0,
+        "video_platform": "YouTube",
+        "video_id": "jN-FfJKkCOo",
+        "duration_text": "1:13:00"
+      },
+      {
+        "id": "yale_phys_2",
+        "title": "2. Vectors in Multiple Dimensions",
+        "order_index": 1,
+        "video_platform": "YouTube",
+        "video_id": "M7X9_6D6v9M",
+        "duration_text": "1:08:00"
+      }
+    ]
+  },
+  {
+    "id": "yc_startup",
+    "title": "How to Start a Startup",
+    "short_description": "Everything you need to know about starting a startup, for free, from some of the world experts.",
+    "full_description": "Sam Altman and others from Y Combinator cover how to come up with ideas, how to find a co-founder, how to build a product, how to get users, and how to raise money.",
+    "category": "Business",
+    "level": "Beginner",
+    "source_name": "Y Combinator",
+    "official_url": "https://startupclass.samaltman.com/",
+    "platform": "YouTube",
+    "is_free": true,
+    "language": "English",
+    "duration_text": "20 lectures",
+    "thumbnail_url": "https://img.youtube.com/vi/CBYhVcO4Wds/maxresdefault.jpg",
+    "lectures": [
+      {
+        "id": "yc_startup_1",
+        "title": "Lecture 1: How to Start a Startup",
+        "order_index": 0,
+        "video_platform": "YouTube",
+        "video_id": "CBYhVcO4Wds",
+        "duration_text": "48:00"
+      },
+      {
+        "id": "yc_startup_2",
+        "title": "Lecture 2: Team and Execution",
+        "order_index": 1,
+        "video_platform": "YouTube",
+        "video_id": "CVfnkM44Urs",
+        "duration_text": "49:00"
+      }
+    ]
+  },
+  {
+    "id": "crashcourse_world_history",
+    "title": "World History",
+    "short_description": "A fun and fast-paced look at the history of the world.",
+    "full_description": "John Green teaches you the history of the world in 42 episodes! From the Agricultural Revolution to the modern day.",
+    "category": "History",
+    "level": "Beginner",
+    "source_name": "CrashCourse",
+    "official_url": "https://thecrashcourse.com/topic/worldhistory/",
+    "platform": "YouTube",
+    "is_free": true,
+    "language": "English",
+    "duration_text": "42 episodes",
+    "thumbnail_url": "https://img.youtube.com/vi/Yocja_N5s1I/maxresdefault.jpg",
+    "lectures": [
+      {
+        "id": "cc_wh_1",
+        "title": "The Agricultural Revolution",
+        "order_index": 0,
+        "video_platform": "YouTube",
+        "video_id": "Yocja_N5s1I",
+        "duration_text": "11:00"
+      },
+      {
+        "id": "cc_wh_2",
+        "title": "Indus Valley Civilization",
+        "order_index": 1,
+        "video_platform": "YouTube",
+        "video_id": "n7ndRwqJYDM",
+        "duration_text": "9:30"
+      }
+    ]
+  },
+  {
+    "id": "leonard_calc1",
+    "title": "Calculus 1",
+    "short_description": "A complete and detailed Calculus 1 course.",
+    "full_description": "Professor Leonard breaks down Calculus 1 concepts in an easy-to-understand way. Covers limits, derivatives, applications of derivatives, and integrals.",
+    "category": "Mathematics",
+    "level": "Beginner",
+    "source_name": "Professor Leonard",
+    "official_url": "https://www.youtube.com/playlist?list=PLF797E961509B4EB5",
+    "platform": "YouTube",
+    "is_free": true,
+    "language": "English",
+    "duration_text": "Full Semester",
+    "thumbnail_url": "https://img.youtube.com/vi/fYyARMqiaag/maxresdefault.jpg",
+    "lectures": [
+      {
+        "id": "calc1_intro",
+        "title": "Introduction to Limits",
+        "order_index": 0,
+        "video_platform": "YouTube",
+        "video_id": "fYyARMqiaag",
+        "duration_text": "2:30:00"
+      }
+    ]
+  },
+  {
+    "id": "envato_graphic_design",
+    "title": "Graphic Design for Beginners",
+    "short_description": "Learn the principles of graphic design.",
+    "full_description": "This course covers the main principles of graphic design including contrast, hierarchy, alignment, balance, and more.",
+    "category": "Design",
+    "level": "Beginner",
+    "source_name": "Envato Tuts+",
+    "official_url": "https://design.tutsplus.com/",
+    "platform": "YouTube",
+    "is_free": true,
+    "language": "English",
+    "duration_text": "20 mins",
+    "thumbnail_url": "https://img.youtube.com/vi/YqQx75OPRa0/maxresdefault.jpg",
+    "lectures": [
+      {
+        "id": "design_1",
+        "title": "Graphic Design Principles",
+        "order_index": 0,
+        "video_platform": "YouTube",
+        "video_id": "YqQx75OPRa0",
+        "duration_text": "16:00"
+      }
+    ]
+  },
+  {
+    "id": "yale_psych",
+    "title": "Introduction to Psychology",
+    "short_description": "A comprehensive introduction to the study of the human mind.",
+    "full_description": "Professor Paul Bloom explores the scientific study of thought and behavior. Topics include the brain, development, language, perception, and memory.",
+    "category": "Psychology",
+    "level": "Beginner",
+    "source_name": "Yale University",
+    "official_url": "https://oyc.yale.edu/psychology/psyc-110",
+    "platform": "YouTube",
+    "is_free": true,
+    "language": "English",
+    "duration_text": "20 lectures",
+    "thumbnail_url": "https://img.youtube.com/vi/P3FKHsqKXgY/maxresdefault.jpg",
+    "lectures": [
+      {
+        "id": "psych_1",
+        "title": "1. Introduction",
+        "order_index": 0,
+        "video_platform": "YouTube",
+        "video_id": "P3FKHsqKXgY",
+        "duration_text": "48:00"
+      },
+      {
+        "id": "psych_2",
+        "title": "2. Foundations: This Is Your Brain",
+        "order_index": 1,
+        "video_platform": "YouTube",
+        "video_id": "NiLbdN_dcnI",
+        "duration_text": "55:00"
+      }
+    ]
+  },
+  {
+    "id": "shiller_finance",
+    "title": "Financial Markets",
+    "short_description": "An overview of the ideas, methods, and institutions that permit human society to manage risks and foster enterprise.",
+    "full_description": "Professor Robert Shiller provides a description of the practices and institutions of modern finance. Topics include risk management, behavioral finance, and securities.",
+    "category": "Finance",
+    "level": "Intermediate",
+    "source_name": "Yale University",
+    "official_url": "https://oyc.yale.edu/economics/econ-252",
+    "platform": "YouTube",
+    "is_free": true,
+    "language": "English",
+    "duration_text": "23 lectures",
+    "thumbnail_url": "https://img.youtube.com/vi/WEDIj9JBTC8/maxresdefault.jpg",
+    "lectures": [
+      {
+        "id": "fin_1",
+        "title": "1. Finance and Insurance as Powerful Forces",
+        "order_index": 0,
+        "video_platform": "YouTube",
+        "video_id": "WEDIj9JBTC8",
+        "duration_text": "1:08:00"
+      }
+    ]
+  }
+]
